@@ -1,0 +1,27 @@
+# Create a word cloud graph
+
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+# Combine all reviews into a single text string
+reviews_combined = """
+Love the sleek design and easy-to-use interface. Worth every penny!
+Disappointed with the poor battery life. Doesn't last as long as advertised.
+Impressed with the accuracy and durability. Great value for money.
+The watch stopped working after a month. Terrible quality.
+Stylish design but uncomfortable to wear for long periods.
+Excellent features, but the strap feels cheap.
+Delivered on time, but the display is too dim in bright light.
+Fantastic customer service! They replaced my watch without any hassle.
+The watch is lightweight and comfortable. Perfect for everyday use.
+Had trouble syncing with my phone initially, but it works fine now.
+"""
+
+# Generate word cloud
+wordcloud = WordCloud(width=800, height=400, background_color='white').generate(reviews_combined)
+
+# Display word cloud
+plt.figure(figsize=(10, 5))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.show()
