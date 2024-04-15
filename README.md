@@ -1,4 +1,4 @@
-# Data Synthesis, Augmentation, and NLP Insights with LLMs
+# Prompts for Data Synthesis, Augmentation, and NLP Insights with LLMs
 # Instructor: Tamilla Triantoro
 
 This tutorial is created for my session on "Data Synthesis, Augmentation, and NLP Insights with LLMs" that takes place at ODSC East conference in Boston in April 2024. To use, simply copy and paste the prompts using LLM of your choice. This tutorial works well with a free version of ChatGPT.
