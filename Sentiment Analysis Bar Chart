@@ -1,0 +1,33 @@
+# Create Sentiment Analysis Bar Chart
+
+import matplotlib.pyplot as plt
+
+# Sentiment analysis results
+sentiments = ['Positive', 'Negative', 'Neutral']
+frequency = [5, 2, 3]  # Replace with actual frequency counts
+
+# Reviews
+reviews = [
+    "Love the sleek design and easy-to-use interface. Worth every penny!",
+    "Disappointed with the poor battery life. Doesn't last as long as advertised.",
+    "Impressed with the accuracy and durability. Great value for money.",
+    "The watch stopped working after a month. Terrible quality.",
+    "Stylish design but uncomfortable to wear for long periods.",
+    "Excellent features, but the strap feels cheap.",
+    "Delivered on time, but the display is too dim in bright light.",
+    "Fantastic customer service! They replaced my watch without any hassle.",
+    "The watch is lightweight and comfortable. Perfect for everyday use.",
+    "Had trouble syncing with my phone initially, but it works fine now."
+]
+
+# Create bar chart
+plt.figure(figsize=(8, 6))
+plt.bar(sentiments, frequency, color=['green', 'red', 'blue'])
+
+# Add title and labels
+plt.title('Sentiment Analysis of Generated Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Frequency')
+
+# Show plot
+plt.show()
